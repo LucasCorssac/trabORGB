@@ -26,3 +26,17 @@ O objetivo do programa é testar as operações básicas que já estão implemen
 Eu botei todas o que cada processador precisa nas suas respectivas pastas, não só os arquivos de memória.
 
 
+O programa assembly atual é :
+
+LW R1, 0(R0)
+LW R2, 4(R0)
+ADD R3, R1, R2
+SUB R3, R3, R2
+BEQ R3, R1 LB1
+SW R0, 8(R0)
+J 0
+LB1:
+SW R3, 8(R0)
+JAL 0
+
+
