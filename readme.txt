@@ -37,6 +37,8 @@ SW R0, 8(R0)
 J 0
 LB1:
 SW R3, 8(R0)
+LH R4, 12(R0)
+SW R4, 16(R0)
 JAL 0
 
 
