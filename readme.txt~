@@ -23,9 +23,7 @@ O objetivo do programa é testar as operações básicas que já estão implemen
 
 ========Minhas adições:
 
-Nota: A versão da ROM de controle do pipeline nestes arquivos CONTÉM a instrução J.
-
-Eu botei tudo o que cada processador precisa nas suas respectivas pastas, não só os arquivos de memória.
+Eu botei todas o que cada processador precisa nas suas respectivas pastas, não só os arquivos de memória.
 
 
 O programa assembly atual é :
