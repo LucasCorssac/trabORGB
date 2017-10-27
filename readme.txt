@@ -39,8 +39,10 @@ SW R0, 8(R0)
 J 0
 LB1:
 SW R3, 8(R0)
-LH R4, 12(R0)
-SW R4, 16(R0)
+LH R4, 12(R0) ; "52" no multi
+SW R4, 16(R0) ; "56" no multi
 JAL 0
+
+MEM_Instruction_LH é o arquivo com a memória do multiciclo com os testes para LH
 
 
