@@ -4,39 +4,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="facing" val="west"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="legacy"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
     </tool>
     <tool name="Pin">
       <a name="tristate" val="false"/>
@@ -44,8 +13,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
     <tool name="Constant">
       <a name="facing" val="north"/>
-      <a name="width" val="16"/>
-      <a name="value" val="0x0"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -666,7 +633,7 @@ b18 0 318 7*0 180
       <a name="addrWidth" val="24"/>
       <a name="dataWidth" val="32"/>
       <a name="contents">addr/data: 24 32
-8c010000 8c020004 221820 621822 10610002 ac000008 8000000 ac030008
+8c010000 8c020004 221818 621822 10610002 ac000008 8000000 ac030008
 8404000c ac040010 3c050023 c000000
 </a>
     </comp>
@@ -2575,7 +2542,6 @@ b18 0 318 7*0 180
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(120,230)" to="(120,330)"/>
     <wire from="(480,150)" to="(550,150)"/>
     <wire from="(130,100)" to="(190,100)"/>
     <wire from="(480,120)" to="(550,120)"/>
@@ -2583,8 +2549,6 @@ b18 0 318 7*0 180
     <wire from="(300,160)" to="(330,160)"/>
     <wire from="(480,60)" to="(550,60)"/>
     <wire from="(480,170)" to="(550,170)"/>
-    <wire from="(260,180)" to="(260,240)"/>
-    <wire from="(120,180)" to="(120,230)"/>
     <wire from="(440,180)" to="(460,180)"/>
     <wire from="(480,90)" to="(550,90)"/>
     <wire from="(130,350)" to="(190,350)"/>
@@ -2597,7 +2561,6 @@ b18 0 318 7*0 180
     <wire from="(600,310)" to="(620,310)"/>
     <wire from="(120,80)" to="(120,130)"/>
     <wire from="(130,150)" to="(130,200)"/>
-    <wire from="(230,240)" to="(260,240)"/>
     <wire from="(480,220)" to="(550,220)"/>
     <wire from="(120,40)" to="(190,40)"/>
     <wire from="(310,90)" to="(310,150)"/>
@@ -2607,6 +2570,7 @@ b18 0 318 7*0 180
     <wire from="(610,170)" to="(660,170)"/>
     <wire from="(440,180)" to="(440,480)"/>
     <wire from="(200,370)" to="(280,370)"/>
+    <wire from="(120,180)" to="(120,330)"/>
     <wire from="(480,110)" to="(550,110)"/>
     <wire from="(90,130)" to="(120,130)"/>
     <wire from="(620,180)" to="(660,180)"/>
@@ -2631,7 +2595,6 @@ b18 0 318 7*0 180
     <wire from="(600,240)" to="(610,240)"/>
     <wire from="(440,480)" to="(540,480)"/>
     <wire from="(320,50)" to="(320,140)"/>
-    <wire from="(130,250)" to="(200,250)"/>
     <wire from="(120,80)" to="(190,80)"/>
     <wire from="(480,200)" to="(550,200)"/>
     <wire from="(130,200)" to="(190,200)"/>
@@ -2656,7 +2619,6 @@ b18 0 318 7*0 180
     <wire from="(480,190)" to="(550,190)"/>
     <wire from="(130,60)" to="(190,60)"/>
     <wire from="(480,80)" to="(550,80)"/>
-    <wire from="(260,180)" to="(330,180)"/>
     <wire from="(120,180)" to="(190,180)"/>
     <wire from="(480,160)" to="(550,160)"/>
     <wire from="(90,250)" to="(130,250)"/>
@@ -2672,7 +2634,6 @@ b18 0 318 7*0 180
     <wire from="(120,130)" to="(190,130)"/>
     <wire from="(230,340)" to="(240,340)"/>
     <wire from="(630,150)" to="(660,150)"/>
-    <wire from="(120,230)" to="(200,230)"/>
     <wire from="(120,40)" to="(120,80)"/>
     <wire from="(600,60)" to="(630,60)"/>
     <wire from="(480,20)" to="(550,20)"/>
@@ -2805,11 +2766,6 @@ b18 0 318 7*0 180
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="1" loc="(710,170)" name="OR Gate"/>
-    <comp lib="1" loc="(230,240)" name="OR Gate">
-      <a name="width" val="32"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="1" loc="(750,170)" name="NOT Gate"/>
     <comp lib="3" loc="(230,140)" name="Adder">
       <a name="width" val="32"/>
